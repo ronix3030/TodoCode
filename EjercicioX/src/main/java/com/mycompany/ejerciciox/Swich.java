@@ -15,6 +15,8 @@ public class Swich {
         // aca definimos el obj que se llama entrada y que este funciona como escaner
          Scanner entrada= new Scanner(System.in);
      
+ //La estructura “Switch” permite múltiples caminos a partir de la evaluación de una sola expresión/condición.
+// La construcción de esta estructura se ejecuta mediante la evaluación de la condición y un conjunto de casos llamados cases.
          
        
          int a,b,c;
