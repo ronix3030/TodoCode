@@ -24,28 +24,33 @@ public class Ejercicios1TODOCODE {
             b=b+1;             
              
          }
+          
          
-         String pa;
-         System.out.println("Ingrese palabra");
-         pa=teclado.nextLine();
-         
-        while (!pa.equals("salir")) {
-    System.out.println(""+pa);
-    pa = teclado.nextLine();
-    System.out.println("Ingrese palabra"); // Ahora se imprime después de solicitar la nueva entrada
+
+        String pa; // Declarar la variable para almacenar la palabra
+        
+        System.out.println("Ingrese palabra:"); // Solicitar al usuario que ingrese una palabra
+        pa = teclado.nextLine(); // Leer la palabra ingresada por el usuario
+        
+        // El bucle while se ejecutará mientras la palabra ingresada NO sea igual a "salir"
+        while (!pa.equals("salir")) { // El operador "!" significa "no" en este contexto, por lo que "!pa.equals("salir")" significa "mientras pa NO sea igual a 'salir'"
+            // Leer la siguiente palabra ingresada por el usuario
+            pa = teclado.nextLine();
+            
+            System.out.println("Ingrese palabra:"); // Volver a solicitar al usuario que ingrese otra palabra
+        }
+        
+        // El bucle se detendrá cuando el usuario ingrese la palabra "salir"
+        
+        // Cerrar el Scanner después de su uso
+        teclado.close();
+    }
 }
+
+
+        
+        
          
          
          
-         
-         
-         
-         
-         
-         
-         
-         
-         
-     }
-    
-}
+     
