@@ -4,6 +4,8 @@
 
 package Clase1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Roni
@@ -19,10 +21,21 @@ en centímetros, pulgadas, pies y yardas. Considere la siguiente información:
 */
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        // aca cree un objeto que se llama teclado
+        Scanner teclado=new Scanner(System.in);
         
         
+        double r;
+       
         
+        System.out.println("Ingrese los metros a convertir");
+        r=teclado.nextDouble();
+        
+        System.out.println("Resultado en centimetros " + (r*100));
+        System.out.println("Resultado en pulgadas " +(r*39.37));
+        System.out.println("Resultado en pies "+ (r*3.28));
+        System.out.println("Resultado en yardas " +(r*1.0936));
         
     }
 }
