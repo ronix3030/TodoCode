@@ -4,6 +4,8 @@
  */
 package Clase1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Roni
@@ -19,9 +21,19 @@ r el radio y h la altura.
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        Scanner teclado =new Scanner(System.in);
         
+        double a,b,area,vo;
         
+        System.out.println("Ingrese Radio");
+        a=teclado.nextDouble();
+        System.out.println("Ingrese Altura ");
+        b=teclado.nextDouble();
         
+        area=2*Math.PI*a*(a+b);
+        vo=Math.PI*a*a*b;
+        System.out.println("El area es: "+area);
+        System.out.println("El volumen es: "+vo);
         
     }
     
