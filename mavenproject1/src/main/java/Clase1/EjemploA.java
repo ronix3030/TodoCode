@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author Roni
  */
-public class Ejemplo1 {
+public class EjemploA {
     
      public static void main(String[] args) {
     

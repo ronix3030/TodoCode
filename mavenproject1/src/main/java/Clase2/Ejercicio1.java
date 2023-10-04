@@ -4,6 +4,8 @@
  */
 package Clase2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Roni
@@ -15,6 +17,19 @@ public class Ejercicio1 {
     
      public static void main(String[] args) {
         System.out.println("Hello World!");
+        Scanner teclado=new Scanner(System.in);
+        int a,b,c;
+        
+         System.out.println("Ingrese Edad");
+         a=teclado.nextInt();
+         System.out.println("Ingrese Edad");
+         b=teclado.nextInt();
+          System.out.println("Ingrese Edad");
+        c=teclado.nextInt();
+        
+        
+
+        
     }
      
     
